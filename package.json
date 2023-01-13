@@ -1,7 +1,7 @@
 {
   "name": "react-query-with-zustand",
   "private": true,
-  "description": "web page to search for github repositories using the username developed with react-query and zustand for state management and swc for compilation",
+  "description": "Web page to search for github repositories using the username developed with react-query and zustand for state management and swc for compilation",
   "keywords": [
     "react",
     "react-query",

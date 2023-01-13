@@ -98,6 +98,7 @@ input {
 	padding: 0 10px;
 	box-sizing: border-box;
 	position: relative;
+	background-color: white;
 }
 
 input:focus {

@@ -5,11 +5,52 @@ body {
 	color: #333;
 	margin: 0;
 	padding: 0;
+	display: grid;
+	place-items: center;
 }
 
 .list {
 	box-sizing: border-box;
 	padding: 50px;
+	display: grid;
+	place-items: center;
+	place-content: center;
+}
+
+.card {
+	width: 600px;
+}
+
+.card h3 {
+	font-size: 20px;
+	color: rgb(28, 104, 218);
+}
+.card-footer {
+	display: flex;
+	align-items: center;
+	padding: 10px;
+	margin-top: 10px;
+}
+
+.card-footer span {
+	margin-left: 10px;
+	background-color: #0077b6;
+	color: white;
+	padding: 5px;
+	border-radius: 5px;
+	box-shadow: 0 0 5px rgba(18, 101, 196, 0.2);
+}
+
+.user-img {
+	min-width: 50px;
+	min-height: 50px;
+	max-width: 50px;
+	max-height: 50px;
+	border-radius: 999999px;
+	overflow: hidden;
+	margin-bottom: 10px;
+	margin-left: 20px;
+	margin-top: 5px;
 }
 
 button {
@@ -39,10 +80,15 @@ button:active {
 }
 .search {
 	height: 100px;
+	width: 600px;
+}
+
+.search-content {
 	display: flex;
-	justify-content: center;
+	flex-direction: row;
 	align-items: center;
-	width: 400px;
+	justify-content: flex-start;
+	width: 600px;
 }
 input {
 	width: 100%;

@@ -30,23 +30,25 @@ export const Card = ({ repo, isFavorite }: CardProps) => {
 	};
 
 	return (
-		<div key={repo.id}>
+		<div className='card' key={repo.id}>
 			<h3>{repo.name}</h3>
 			<p>{repo.description}</p>
 
 			<a href={repo.html_url} target='_blank' rel='noreferrer'>
 				{repo.html_url}
 			</a>
-			<br />
-			<br />
-			<button onClick={handleLike}>
-				<i
-					className={`${isFavorite ? 'fa-solid fa-heart fa-2x' : 'fa-regular fa-heart fa-2x'}`}
-					style={{
-						color: isFavorite ? 'red' : 'black',
-					}}
-				></i>
-			</button>
+
+			<div className='card-footer'>
+				<button onClick={handleLike}>
+					<i
+						className={`${isFavorite ? 'fa-solid fa-heart fa-2x' : 'fa-regular fa-heart fa-2x'}`}
+						style={{
+							color: isFavorite ? 'red' : 'black',
+						}}
+					></i>
+				</button>
+				<span>{repo.language}</span>
+			</div>
 		</div>
 	);
 };

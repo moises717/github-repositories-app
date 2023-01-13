@@ -1,7 +1,7 @@
 {
   "name": "react-query-with-zustand",
   "private": true,
-  "description": "Application to search for repositories using the github user name",
+  "description": "Application to search for user repositories using React Query and Zustand",
   "keywords": [
     "react",
     "react-query",
